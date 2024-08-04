@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem, áudio e vídeo</title>
+</head>
+<body>
+    <h1>
+        Imagens Dinâmica, áudio e vídeo
+    </h1>
+    <h2>
+        Teste de imagem dinamica em 300/700/1000px
+    </h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="Imagem flexível">
+    </picture>
+<br>
+<hr>
+<h2>
+    Teste de áudio
+</h2>
+<h3>
+    The Night We Met - Lord Huron
+</h3>
+    <audio preload="metadata" controls> 
+        <source src="audio/audio.mp3" type="audio/mp3">
+        <source src="audio/audio.ogg" type="audio/ogg">
+        <source src="audio/audio.wav" type="audio/wav">
+        <p> seu navegador não suporta audio. 
+            <a href="audio/audio.mp3" download="audio.mp3" type="audio/mp3"></a>
+        </p>
+    </audio>
+    <br>
+    <hr>
+    <h2>
+        Teste de video locado interno
+    </h2>
+    <h3>
+        nomu VS all might
+    </h3>
+    <video width="560" controls poster="img/images02.jpg">
+        <source src="video/might_vs_nomu.mp4" type="video/mp4">
+        <source src="video/might_vs_nomu.mkv" type="video/mkv">
+        <p>
+            infelizmente seu navegador não suporta nossos fomatos de video, mas você pode estar fazendo o download clicando aqui. 
+            <a href="video/might_vs_nomu.mp4" download="might_vs_nomu.mp4" type="video/mp4"></a>
+        </p>
+    </video>
+    
+</body>
+</html>

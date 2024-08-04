@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en/pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Makson.dev">
+    <meta name="keywords" content="HTMLL5, tecnologia">
+    <meta name="description" content="aprenda aqui um exemplo da pseudo-class hover ">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }       
+        div:hover {
+            color: red;
+        }
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+        div > p {
+            display: none;
+        }   
+    </style>
+    <title>exemplos de hover</title>
+</head>
+<body>
+    <h1>
+        EXEMPLO DE HOVER:
+    </h1>
+    <p>
+        passe o mouse sobre o texto abaixo 
+    </p>
+    <div>
+        passe o mouse aqui
+        <p>
+            TEXTO ESCONDIDO...
+        </p>
+    </div>
+    <br>
+    <hr>
+    <p>
+        <a href="link.html">
+            exemplo de links personalizados 
+        </a>
+        &Rarr; 
+        <br>
+        &lAarr;
+        <a href="pseudo.html">
+            voltar para o inicio
+        </a>
+    </p> 
+</body>
+</html>

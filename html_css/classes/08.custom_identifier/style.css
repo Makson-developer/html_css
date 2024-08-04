@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+
+/* vemos que mesmo eu colocando o "body" com uma fonte importada assim mudando toda a fonte do conteudo, assim que eu coloco um id ou class eles sobressaem esse valor gerando novo resultado */
+body {
+    background-color: rgba(127, 255, 212, 0.452);
+    font-family: Ga Maamli , Helvetica, sans-serif;
+}
+/* # em CSS é o mesmo que id=" " em HTML */
+.principal{
+    text-align: center;
+    font-size: 2em;
+    background-color: rgba(0, 255, 255, 0.432);
+    color: black;
+}
+/* . em CSS é o mesmo que class=" " em HTML  */
+.paragrafos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: rgb(0, 0, 117);
+}   
+/* mostrando que posso colocar id e class na mesma tag sendo que o seletor "id" subjulga o seletor "class" */
+p#teste{
+    font-weight: bolder; 
+}

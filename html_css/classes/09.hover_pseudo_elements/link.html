@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="makson.dev">
+    <meta name="keywords" content="HTMLL5, tecnologia">
+    <meta name="description" content="aprenda aqui um exemplo da pseudo-elements">
+    <link rel="stylesheet" href="style.css">
+    <style>      
+        a {
+            text-decoration: none;
+            font-weight: normal;
+        }
+        /*a:visited{color: darkred;}*/ 
+        /*parametro acima funcional mas travado para não interferir no conteudo-->*/
+        a::after {
+            content: '\00262F';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }        
+        .ancher2 {
+            color: darkred;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+    <title>pseudo-element</title>
+</head>
+<body>
+    <h1>LINKs PERSONALIZADOS:</h1>
+    <ul>
+        <li>
+            <a class="ancher2" href="https://store.epicgames.com/pt-BR">
+                epic store
+            </a>
+        </li>
+        <li>
+            <a class="ancher2" href="https://store.steampowered.com/?l=portuguese">
+                steam store
+            </a>
+        </li>
+        <li>
+            <a class="ancher2" href="https://eu.shop.battle.net/pt-br">
+                battle.net store
+            </a>
+        </li>
+    </ul>
+    <br>
+    <hr>
+    <p>
+        &Larr;
+        <a href="hover.html" target="_self">
+            exemplo do uso do hover
+        </a>
+        &lAarr;
+        <a href="pseudo.html">
+            voltar para o inicio
+        </a>
+    </p>
+</body>
+</html> 
