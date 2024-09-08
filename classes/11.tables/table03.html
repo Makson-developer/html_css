@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML5, tecnologia">
+    <meta name="Author" content="makson.dev">
+    <title>table 03</title>
+    <!-- ATENÇÃO: Exercícios ainda em desenvolvimento, portanto apenas ilustrativos com carência de textos explicativos-->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        table {
+            height: 30vw;
+            width: 85vw;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        table>caption {
+            font-weight: bold;
+            font-size: 1.5em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        th,td {
+            border: 1px solid black;
+            padding: 3px;
+            font-size: 2vw;
+
+        }
+
+        
+       tfoot th, thead th {
+            background-color: lightgray;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #woman{
+            background-color: lightpink;
+            padding: 10px;
+        }
+
+        .woman:hover{
+            background-color: lightpink;
+            text-decoration: underline;
+        }
+        
+        #man{
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        .man:hover{
+            background-color: lightblue;
+            text-decoration: underline;
+        }
+
+        tbody>tr>td {
+            padding: 5px;
+            font-weight: 300;
+        }
+        tfoot td{
+            background-color: rgb(173, 230, 185);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercício sobre tabela 01</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3" id="woman">Mulheres</th>
+                <td class="woman"> Ana Maria Santos</td>
+                <td class="woman">Alien</td>
+                <td class="woman">Rambo</td>
+                <td class="woman">Vingadores</td>
+            </tr>
+            <tr>
+                <td class="woman">Beatriz Souza</td>
+                <td class="woman">Hulk</td>
+                <td class="woman">Inception</td>
+                <td class="woman">Batman</td>
+            </tr>
+            <tr>
+                <td class="woman">Cláudia Melo</td>
+                <td class="woman">Oblivion</td>
+                <td class="woman">Matrix</td>
+                <td class="woman">Big Hero</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="3" id="man">Homens</th>
+                <td class="man">Bruno Mendonça</td>
+                <td class="man">Intocáveis</td>
+                <td class="man">Amnésia</td>
+                <td class="man">Gladiador</td>
+            </tr>
+            <tr>
+                <td class="man">Daniel Lourenço</td>
+                <td class="man">Wall-E</td>
+                <td class="man">Oldboy</td>
+                <td class="man">Dangal</td>
+            </tr>
+            <tr>
+                <td class="man">Fabiano Mota</td>
+                <td class="man">Star Wars 5</td>
+                <td class="man">Taxi Driver</td>
+                <td class="man">Toy Story</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
