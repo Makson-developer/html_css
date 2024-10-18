@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="makson.dev">
+    <title>Forms</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <!--nesse conteudo aprenderemos sobre formulários, MAS o mesmo não será enviado para nenhum controlador pois não vamos programar ainda-->
+
+    <form action="cadastro.php">
+
+        <!-- para que o formulário não mostre a sugestão use o parâmetro (autocomplete="off") -->
+
+        <p>
+            <label for="inome">
+                Nome:
+            </label>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">
+                Sobrenome: 
+            </label>
+             <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+
+        <!-- o parâmetro (name="") é mais util em HTML e PHP, já em JS o mais utilizado seria o (id="") assim como para o label-->
+         
+    </form>
+</body>
+</html>
