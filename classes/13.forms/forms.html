@@ -14,11 +14,12 @@
 <body>
     <h1>Formulários</h1>
 
-    <!--nesse conteudo aprenderemos sobre formulários, MAS o mesmo não será enviado para nenhum controlador pois não vamos programar ainda-->
+    <!--nesse conteudo aprenderemos sobre formulários, MAS o mesmo não será enviado para nenhum controlador pois não vamos programar nada ainda-->
 
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="post">
+        <!--o parâmetro (method="") muda a forma de exibição na URL , "get" seria o padrão e "post" faria com que o escrito no (label) não apareça na URL, lembrando que há outras formas de ver (pelo DevToos por exemplo ), fazendo assim nenhuma das escolhas uma forma segura de esconder dados importantes -->
 
-        <!-- para que o formulário não mostre a sugestão use o parâmetro (autocomplete="off") -->
+        <!-- para que o formulário não mostre a sugestão use o parâmetro (autocomplete="off") o padrão é ON -->
 
         <p>
             <label for="inome">
@@ -37,7 +38,7 @@
         </p>
 
         <!-- o parâmetro (name="") é mais util em HTML e PHP, já em JS o mais utilizado seria o (id="") assim como para o label-->
-         
+
     </form>
 </body>
 </html>
