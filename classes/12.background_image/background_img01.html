@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background image</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <style>
+      * {
+        margin: 1vw;
+        padding: 2vw;
+        text-align: right;
+      }
+
+      body {
+        background-image: url("img/wallpaper001.jpg");
+      }
+
+      h1 {
+        text-align: center;
+        background-color: black;
+        color: white;
+      }
+
+      a {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        border-radius: 10px;
+        font-weight: bolder;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      div.box {
+        display: inline-block;
+        border: 1px solid black;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        background-color: lightgray;
+      }
+
+      div#bx1 {
+        background-color: skyblue;
+      }
+
+      div#bx2 {
+        background-image: linear-gradient(to bottom, yellow, red);
+      }
+
+      div#bx3 {
+        background-image: url("img/pattern003.png");
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Primeiras apresentações de Background-image</h1>
+    <div class="box" id="bx1"></div>
+
+    <div class="box" id="bx2"></div>
+
+    <div class="box" id="bx3"></div>
+
+    <footer>
+        &thinsp;
+        <div><a href="./background_img02.html">2</a>
+        &thinsp;
+        <a href="./background_img03.html">3</a>
+        &thinsp;
+        <a href="./background_img02.html">Próxima Página &rAarr;</a></div>
+    </footer>
+  </body>
+</html>

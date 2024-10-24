@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background image pag 02</title>
+    <style>
+      div a {
+        display: inline-block;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        background-color: lightgray;
+        padding: 3px;
+        border-radius: 10px;
+        font-weight: bolder;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      h1 {
+        text-align: center;
+        background-color: black;
+        color: white;
+      }
+
+      div.block {
+        background-image: url("img/wallpaper003.jpg");
+        /*a imagem ira aparecer do tamanho original a não ser que eu coloque a propriedade "background-size" 
+            background-size: 100px 100px; */
+        height: 200px;
+        width: 60vw;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        background-repeat: no-repeat;
+        /*no background-repeat temos as variações : no-repeat (para não repetir), repeat-x (para repetir na horizontal) e o repeat-x (para repetir na vertical)  */
+      }
+
+      div#blk01 {
+        background-position: left top;
+      }
+
+      div#blk02 {
+        background-position: left center;
+      }
+
+      div#blk03 {
+        background-position: right bottom;
+      }
+
+      div#blk04 {
+        background-position: center center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Posições de background-image</h1>
+    <div class="block" id="blk01"></div>
+
+    <div class="block" id="blk02"></div>
+
+    <div class="block" id="blk03"></div>
+
+    <div class="block" id="blk04"></div>
+        <div><a href="./background_img01.html">&lAarr;Página Anterior</a>
+      &thinsp;
+      <a href="./background_img01.html">1</a>
+      &thinsp;
+      <a href="./background_img03.html">3</a>
+      &thinsp;
+      <a href="./background_img03.html">Próxima Página &rAarr;</a></div>
+  </body>
+</html>
