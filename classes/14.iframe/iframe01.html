@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+   <style>
+    body{
+        text-align: center;
+    }
+    iframe{
+        width: 500px;
+        height: 250px;
+    }
+   </style>
+</head>
+<body>
+    <h1>Uso de Iframe</h1>
+    <p>
+        <!--Alguns sites funcionam em iframe, enquanto outros não. O site abaixo, por exemplo, é um site meu hospedado no GitHub, mas um site como o Google, por exemplo, não pode ser colocado em iframe.-->
+    <iframe src="https://makson-developer.github.io/simple-poetry/poetry" frameborder="1 " scrolling="auto">
+        <!--tamanho padrão do iframe: 300px por 150px-->
+        <a href="https://makson-developer.github.io/simple-poetry/poetry" target="_blank"> meu site no github</a>
+        <!--Como você pode ver, ao invés de colocar uma mensagem dizendo que não funciona o meu iframe, assim como fazíamos ao ancorar uma mídia, colocaremos o site anexado, tendo assim certeza de que o cliente consiga ter acesso.-->
+    </iframe>
+    </p>
+ 
+</body>
+</html>
