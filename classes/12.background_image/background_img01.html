@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>background image</title>
+    <title>Background image</title>
     <link rel="stylesheet" href="styles/style.css" />
     <style>
       * {
-        margin: 1vw;
-        padding: 2vw;
+        margin: 0px;
+        padding: 0px;
         text-align: right;
       }
 
       body {
         background-image: url("img/wallpaper001.jpg");
+        margin: 30px;
       }
 
       h1 {
@@ -23,11 +24,12 @@
       }
 
       a {
+        padding: 10px;
         font-family: Arial, Helvetica, sans-serif;
         text-decoration: none;
         color: black;
         background-color: white;
-        border-radius: 10px;
+        border-radius: 15px;
         font-weight: bolder;
       }
 
@@ -36,12 +38,19 @@
       }
 
       div.box {
+
+        padding: 10px;
+        margin: 50px;
         display: inline-block;
         border: 1px solid black;
         width: 300px;
         height: 300px;
         border-radius: 10px;
         background-color: lightgray;
+      }
+
+      div#bx0 {
+        background-color: white;
       }
 
       div#bx1 {
@@ -59,6 +68,8 @@
   </head>
   <body>
     <h1>Primeiras apresentações de Background-image</h1>
+    <div class="box" id="bx0"></div>
+
     <div class="box" id="bx1"></div>
 
     <div class="box" id="bx2"></div>
