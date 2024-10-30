@@ -62,16 +62,29 @@
               <input type="radio" name="sexo" id="other" value="o"><label for="other">Outro</label>
               <!--Todo input de "radio" que faz parte do mesmo grupo precisa ter o mesmo "name" para funcionar corretamente-->
           </p>
-
+            <p>
+                <label for="iest" >Estado cívil:</label>
+                <select name="civil" id="iest">
+                    <option value="" selected>---Escolha---</option>
+                    <option value="sl">Solteiro(a)</option>
+                    <option value="cs">Casado(a)</option>
+                    <option value="dv">Divorciado(a)</option>
+                    <option value="vo">Viúvo(a)</option>
+                </select>
+            </p>
           <p>
-            <label for="ifoto">Documento com Foto</label>
-            <input type="file" name="foto" id="ifoto" required>
+            Documento com Foto: <br>
+            <label for="ifront">Frente &darr;<br>
+            </label>
+            <input type="file" name="front" id="ifront" required>
+            <label for="iback"> <br>Verso &darr;<br></label>
+            <input type="file" name="back" id="iback" required>
           </p>
       </fieldset>
       <!-- Estudar mais sobre RegEx-->
-      <p>
-        <input type="submit" value="Enviar" />
-        <input type="reset" value="Limpar" />
+      <p >
+        <input type="submit" value="Enviar" class="buttom"/>
+        <input type="reset" value="Limpar" class="buttom"/>
       </p>
     </form>
   </body>

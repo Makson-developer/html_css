@@ -3,6 +3,7 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    padding-bottom: 1px;
   }
 
   h1 {
@@ -11,10 +12,30 @@
     margin: 25px 25vw;
   }
 
-  p {
-    font-size: 25px;
+  legend{
+    font-weight: bold;
+    font-size: 18px;
   }
 
-  input {
-    font-size: 20px;
+  p {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  input, option, select{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.644);
   } 
+
+  .buttom{
+    color: white;
+    background-color:black;
+    font-weight: 300;
+
+  }
+
+  .buttom:hover{
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.8s;
+  }
