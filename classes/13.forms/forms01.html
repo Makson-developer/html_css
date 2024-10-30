@@ -1,90 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="makson.dev">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="makson.dev" />
     <title>Forms</title>
-    <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
-
-        h1{
-            font-size: 50px;
-            background-color: lightgray;
-            margin: 25px 25vw;
-        }
-
-        p{
-            font-size: 25px;
-        }
-
-        input{
-            font-size: 20px;
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
     <h1>Formulários</h1>
 
     <!--nesse conteudo aprenderemos sobre formulários, MAS o mesmo não será enviado para nenhum controlador pois não vamos programar nada ainda-->
 
     <form action="cadastro.php" method="post">
-        <!--o parâmetro (method="") muda a forma de exibição na URL , "get" seria o padrão e "post" faria com que o escrito no (label) não apareça na URL, lembrando que há outras formas de ver (pelo DevToos por exemplo ), fazendo assim nenhuma das escolhas uma forma segura de esconder dados importantes -->
+      <!--o parâmetro (method="") muda a forma de exibição na URL , "get" seria o padrão e "post" faria com que o escrito no (label) não apareça na URL, lembrando que há outras formas de ver (pelo DevToos por exemplo ), fazendo assim nenhuma das escolhas uma forma segura de esconder dados importantes -->
 
-        <!-- para que o formulário não mostre a sugestão use o parâmetro (autocomplete="off") o padrão é ON -->
+      <!-- para que o formulário não mostre a sugestão use o parâmetro (autocomplete="off") o padrão é ON -->
 
-        <p>
-            <!--pode ser uma "div" no lugar do "p"-->
+      <p>
+        <!--pode ser uma "div" no lugar do "p"-->
 
-            <label for="inome">
-                Nome de Usuário:
-            </label>
-            <input type="text" name="nome" id="inome" required minlength="5" maxlength="15" size="15" placeholder="Digite seu nome " autocomplete="username">
-        </p>
-        <p>
-            <label for="isen">
-                Senha:  
-            </label>
-            <input type="password" name="senha" id="isen" required minlength="8" size="15" placeholder="mínimo 8 caracteres" autocomplete="current-password">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+        <label for="inome"> Nome de Usuário: </label>
+        <input
+          type="text"
+          name="nome"
+          id="inome"
+          required
+          minlength="5"
+          maxlength="15"
+          size="15"
+          placeholder="Digite seu nome "
+          autocomplete="username"
+        />
+      </p>
+      <p>
+        <label for="isen"> Senha: </label>
+        <input
+          type="password"
+          name="senha"
+          id="isen"
+          required
+          minlength="8"
+          size="15"
+          placeholder="mínimo 8 caracteres"
+          autocomplete="current-password"
+        />
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
 
-        <!-- o parâmetro (name="") é mais util em HTML e PHP, já em JS o mais utilizado seria o (id="") assim como para o label-->
-
+      <!-- o parâmetro (name="") é mais util em HTML e PHP, já em JS o mais utilizado seria o (id="") assim como para o label-->
     </form>
 
     <h1>Alunos</h1>
 
     <form action="cadastro.php" method="post">
-        <p>
-
-            <label for="inome">
-                Aluno:
-            </label>
-            <input type="text" name="nome" id="inome" required minlength="5" size="15" placeholder="Nome do Aluno" autocomplete="name" required>
-        </p>
-        <p>
-            <label for="imedia">
-                Média  :  
-            </label>
-            <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.1" required>
-        </p>
-        <p>
-            <label for="imes">
-                Período Letivo:
-            </label>
-            <input type="month" name="mes" id="imes" required value="2024-10">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+      <p>
+        <label for="inome"> Aluno: </label>
+        <input
+          type="text"
+          name="nome"
+          id="inome"
+          required
+          minlength="5"
+          size="15"
+          placeholder="Nome do Aluno"
+          autocomplete="name"
+          required
+        />
+      </p>
+      <p>
+        <label for="imedia"> Média : </label>
+        <input
+          type="number"
+          name="media"
+          id="imedia"
+          required
+          min="0"
+          max="10"
+          placeholder="0 a 10"
+          step="0.1"
+          required
+        />
+      </p>
+      <p>
+        <label for="imes"> Período Letivo: </label>
+        <input type="month" name="mes" id="imes" required value="2024-10" />
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
     </form>
-</body>
+  </body>
 </html>

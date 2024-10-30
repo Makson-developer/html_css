@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms pag02</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Formulário de Cadastro</h1>
+    <form action="cadastro.php" method="post">
+      <fieldset>
+        <legend>Dados de Pessoais</legend>
+          <p>
+            <label for="inome">Nome:</label>
+            <input
+              type="text"
+              name="nome"
+              id="inome"
+              required
+              maxlength="30"
+              placeholder="Nome Completo"
+              autocomplete="name"
+              size="27"
+            />
+          </p>
+          <p>
+            <label for="iniver">Data de nascimento:</label>
+            <input
+              type="date"
+              name="niver"
+              id="iniver"
+              value="1998-05-12"
+              required 
+            />
+            <!-- no "date" o "value" tem a seguinte ordem: ano-mês-dia (separados por traços "-") pois segue o estilo padrão internacional-->
+          </p>
+          <p>
+            <label for="inumber">Numero de telefone:</label>
+            <input
+              type="tel"
+              name="number"
+              id="inumber" pattern="^\(\d{2}\)\d{4,5}-[0-9]{4}$"
+              required
+              placeholder="(xx)xxxx-xxxx" size="12"
+            />
+          </p>
+          <p>
+            <label for="imail">E-mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="imail"
+              placeholder="digite aqui seu e-mail"
+              required size="27"
+            />
+          </p>
+          <p>
+            Sexo:
+              <input type="radio" name="sexo" id="man" value="m"><label for="man">Masculino</label>
+              <input type="radio" name="sexo" id="woman" value="w"><label for="woman">Feminino</label>
+              <input type="radio" name="sexo" id="other" value="o"><label for="other">Outro</label>
+              <!--Todo input de "radio" que faz parte do mesmo grupo precisa ter o mesmo "name" para funcionar corretamente-->
+          </p>
+
+          <p>
+            <label for="ifoto">Documento com Foto</label>
+            <input type="file" name="foto" id="ifoto" required>
+          </p>
+      </fieldset>
+      <!-- Estudar mais sobre RegEx-->
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
